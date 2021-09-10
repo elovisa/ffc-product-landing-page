@@ -1,9 +1,8 @@
-body,
-html{
-    width:100%;
-}
 #content{
     position:relative;
+    background-color:black;
+    color:white;
+    text-align:center;
     width:100%;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
@@ -14,32 +13,18 @@ html{
     "footer footer footer"
     ;
 }
+p, a{
+    font-size:18px;
+}
 header{
+    width:100%;
+    z-index:1;
     position:sticky;
     top:0;
     grid-area:header;
     height:75px;
     width:100%;
-}
-main{
-    grid-area:content;
-}
-
-footer{
-    grid-area:footer;
-    display:flex;
-    justify-content: space-around;
-}
-header,
-footer,
-main{
-    width:100%;
-    border:1px solid gray;
-}
-
-footer,
-main{
-    height:400px;
+    background-color: rgba(0, 0, 0, 0.295);
 }
 
 nav{
@@ -65,10 +50,56 @@ li{
 
 a{
     text-decoration:none;
-    color:black;
+    color:white;
     padding:10px 30px;
 }
 
 a:hover{
     background-color:gray;
+}
+
+/**Main**/
+main{
+    grid-area:content;
+}
+
+#intro{
+    background-image:url(../img/watch.jpg);
+    height:650px;
+    position: relative;
+    color:white;
+}
+#intro h1{
+    position:absolute;
+    right:200px;
+    top:100px;
+    font-size: 50px;
+    text-align:right;
+}
+#about{
+    background-color:white;
+    color:black;
+    height:400px;
+    display:flex;
+}
+
+
+footer{
+    grid-area:footer;
+    display:flex;
+    justify-content: space-around;
+    align-content:center;
+    background-color: paleturquoise;
+}
+
+
+
+
+
+@media screen and (max-width:768px){
+    footer,
+    #about{
+        flex-direction:column;
+        align-content:center;
+    }
 }
