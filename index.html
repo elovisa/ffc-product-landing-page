@@ -22,10 +22,10 @@
                 
                 <div id="main-nav">
                     <ul>
-                        <li><a href="#" class="nav-link">Home</a></li>
-                        <li><a href="#about" class="nav-link">About</a></li>
-                        <li><a href="#" class="nav-link">Usage</a></li>
-                        <li><a href="#" class="nav-link">Contact</a></li>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="#functions" class="nav-link">Functions</a></li>
+                        <li><a href="#usage-flex" class="nav-link">Usage</a></li>
+                        <li><a href="#form" class="nav-link">Information</a></li>
                     </ul>
                 </div>
             </nav>
@@ -37,18 +37,18 @@
             </article>
             <article id="functions">
                 <h2>A smart watch for an even smarter person</h2>
-                <div id="functions-flex">
+                <div class="flex">
                     <section>
-                        <img src="img/Time.png" alt="Time">
+                        <img src="img/Time.png" alt="Time" class="svg">
                         <p>You will never be late again!</p>
     
                     </section>
                     <section>
-                        <img src="img/Notifications.png" alt="notifications in clock">   
+                        <img src="img/Notifications.png" alt="notifications in clock" class="svg">   
                         <p>Get your notifications in your clock!</p> 
                     </section>
                     <section>
-                        <img src="img/Music.png" alt="music from clock">
+                        <img src="img/Music.png" alt="music from clock" class="svg">
                         <p>Play music directly from the clock</p>
     
                     </section>
@@ -56,15 +56,51 @@
                 <p>Basically: with Mojo watch 800x, you won't ever need your phone again.</p>
 
             </article>
-            <article>
-               
+            <article id="watch-promotion">
+
+                <div class="flex" id="usage-flex">
+                    <div>
+                        <h2>For all purposes</h2>
+                        <p>Bring it to the first date, on a long run,
+                            to the club, when doing laundry, cooking or
+                            chilling. Change the band for the occasion.
+                        </p>
+                    </div>
+                    <img src="img/watch2.png" alt="Mojo watch 800x in grey">
+
+                </div>
+            
             </article>
             <article id="form">
 
-                <form action=" https://www.freecodecamp.com/email-submit" method="POST">
+                <div class="flex">
+                    <div id="form-info">
+                        <h2>Interested? </h2>
+                        <p>Fill the form and let us tell you more. We'll
+                            give you more information over email. And you 
+                            may aswell give us you phone number and we'll
+                            give you a call.
+                        </p>
+                    </div>
 
-            
-                </form>
+                    <form action=" https://www.freecodecamp.com/email-submit" method="POST">
+    
+                        <label for="firstname">Firstname</label>
+                        <input type="text" id="firstname" name="firstname" required>
+                        
+                        <label for="lastname">Lastname</label>
+                        <input type="text" id="lastname" name="lastname" required>
+    
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone">
+    
+                        <input type="submit">
+                
+                    </form>
+                </div>
 
             </article>
             
